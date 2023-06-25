@@ -31,10 +31,11 @@ body{
 .marquee{
     overflow: hidden;
     background-color: lightgray;
-    padding: 60px 0;
+    padding: 50px 0;
     white-space: nowrap;
 }
 
+/* make the marquee items stop on hover */
 .marquee:hover marquee-items{
     animation-play-state: paused;
 
@@ -46,7 +47,7 @@ body{
 }
 
 .marquee-items img{
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
     margin: 0 40px;
 }
