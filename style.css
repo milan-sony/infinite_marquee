@@ -15,27 +15,37 @@ body{
     to{
         transform: translateX(0%);
     }
-    
 }
 
-.logos{
+/* if you want to move the items form right to left, change the values  to
+
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+
+*/
+
+.marquee{
     overflow: hidden;
     background-color: lightgray;
     padding: 60px 0;
     white-space: nowrap;
 }
 
-.logos:hover .logo-slide{
+.marquee:hover marquee-items{
     animation-play-state: paused;
 
 }
 
-.logo-slide{
+.marquee-items{
     display: inline-block;
     animation: 30s slide infinite linear;
 }
 
-.logo-slide img{
+.marquee-items img{
     height: 100px;
     width: 100px;
     margin: 0 40px;
