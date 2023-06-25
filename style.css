@@ -36,7 +36,7 @@ body{
 }
 
 /* make the marquee items stop on hover */
-.marquee:hover marquee-items{
+.marquee:hover .marquee-items{
     animation-play-state: paused;
 
 }
