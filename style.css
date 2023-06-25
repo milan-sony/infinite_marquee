@@ -8,7 +8,7 @@ body{
     background: whitesmoke;
 }
 
-@keyframes slide {
+@keyframes marquee-animation {
     from{
         transform: translateX(-100%);
     }
@@ -42,7 +42,7 @@ body{
 
 .marquee-items{
     display: inline-block;
-    animation: 30s slide infinite linear;
+    animation: 30s marquee-animation infinite linear;
 }
 
 .marquee-items img{
