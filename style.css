@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: whitesmoke;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+    
+}
+
+.logos{
+    overflow: hidden;
+    background-color: lightgray;
+    padding: 60px 0;
+    white-space: nowrap;
+}
+
+.logos:hover .logo-slide{
+    animation-play-state: paused;
+
+}
+
+.logo-slide{
+    display: inline-block;
+    animation: 30s slide infinite linear;
+}
+
+.logo-slide img{
+    height: 100px;
+    width: 100px;
+    margin: 0 40px;
+}
